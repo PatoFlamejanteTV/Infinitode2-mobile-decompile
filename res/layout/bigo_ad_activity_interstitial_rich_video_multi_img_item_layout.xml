@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sg.bigo.ads.common.view.RoundedFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@id/inter_media_item_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:radius="8.0dip">
+	<sg.bigo.ads.common.view.AdImageView android:id="@id/inter_media_item_background" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+	<sg.bigo.ads.common.view.FixContentFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_gravity="center" android:id="@id/inter_media_item_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:radius="8.0dip">
+		<sg.bigo.ads.common.view.AdImageView android:layout_gravity="center" android:id="@id/inter_media_item" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="fitCenter" />
+	</sg.bigo.ads.common.view.FixContentFrameLayout>
+</sg.bigo.ads.common.view.RoundedFrameLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<ImageView android:id="@id/cas_native_media_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" android:maxHeight="300.0dip" />
+	<RelativeLayout android:background="@drawable/cas_ip_bg_card" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="5.0dip" android:layout_weight="1.0">
+		<ImageView android:id="@id/cas_native_icon" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_margin="10.0dip" android:layout_centerHorizontal="true" />
+		<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="140.0dip" android:layout_marginBottom="100.0dip">
+			<TextView android:textSize="25.0sp" android:textColor="@android:color/black" android:ellipsize="end" android:gravity="center" android:id="@id/cas_native_headline" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			<TextView android:textColor="@android:color/black" android:ellipsize="end" android:gravity="center" android:id="@id/cas_native_body" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		</LinearLayout>
+		<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_marginTop="15.0dip" android:layout_marginBottom="40.0dip" android:weightSum="1.0" android:layout_alignParentBottom="true" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip">
+			<Button android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/cas_native_cancel" android:background="@drawable/cas_rounded_button_black" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/cas_ad_close_btn" android:layout_weight="0.4" android:paddingStart="10.0dip" android:paddingEnd="5.0dip" />
+			<Space android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.2" />
+			<Button android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/cas_native_cta" android:background="@drawable/cas_rounded_button" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="@string/cas_ad_open_btn" android:layout_weight="0.4" />
+		</LinearLayout>
+	</RelativeLayout>
+	<include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:layout_marginStart="10.0dip" android:layout_marginEnd="10.0dip" layout="@layout/cas_powered_mark" />
+</LinearLayout>

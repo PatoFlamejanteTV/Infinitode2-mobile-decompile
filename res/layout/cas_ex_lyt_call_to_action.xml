@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/tv_learn_more" android:background="@drawable/cas_ex_button_rounded_outlined" android:focusable="false" android:clickable="false" android:layout_width="128.0dip" android:layout_height="36.0dip" android:layout_margin="25.0dip" android:text="Learn More" />

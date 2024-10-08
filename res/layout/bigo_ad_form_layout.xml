@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<RelativeLayout android:id="@id/inter_image_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<sg.bigo.ads.common.view.ViewFlow android:id="@id/inter_image_view_flow" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+		<sg.bigo.ads.common.view.RoundedFrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:layout_alignBottom="@id/inter_image_view_flow" android:layout_marginEnd="20.0dip" android:layout_alignEnd="@id/inter_image_view_flow" app:radius="10.0dip">
+			<sg.bigo.ads.common.view.Indicator android:id="@id/inter_image_indicator" android:background="#33ffffff" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		</sg.bigo.ads.common.view.RoundedFrameLayout>
+	</RelativeLayout>
+	<sg.bigo.ads.common.view.HeightScrollView android:gravity="center" android:id="@id/inter_form_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<LinearLayout android:orientation="vertical" android:id="@id/inter_form_content" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<View android:id="@id/inter_blank_viewholder" android:layout_width="fill_parent" android:layout_height="0.0dip" />
+			<sg.bigo.ads.common.view.RoundedFrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-8.0dip" app:topLeftRadius="8.0dip" app:topRightRadius="8.0dip">
+				<include layout="@layout/bigo_ad_form_content" />
+			</sg.bigo.ads.common.view.RoundedFrameLayout>
+		</LinearLayout>
+	</sg.bigo.ads.common.view.HeightScrollView>
+	<FrameLayout android:id="@id/inter_icon_layout" android:background="@drawable/bigo_ad_icon_background" android:layout_width="108.0dip" android:layout_height="108.0dip" android:layout_centerHorizontal="true">
+		<sg.bigo.ads.common.view.RoundedFrameLayout android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:radius="26.5dip">
+			<ImageView android:id="@id/inter_form_content_icon" android:layout_width="100.0dip" android:layout_height="100.0dip" android:src="@drawable/form_icon_back_up" />
+		</sg.bigo.ads.common.view.RoundedFrameLayout>
+	</FrameLayout>
+	<FrameLayout android:layout_gravity="bottom" android:id="@id/form_submit_layout" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="76.0dip" android:layout_alignParentBottom="true">
+		<Button android:enabled="false" android:textSize="14.0sp" android:id="@id/form_submit" android:background="@drawable/bigo_ad_btn_background_white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:textAllCaps="false" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip" />
+	</FrameLayout>
+	<FrameLayout android:id="@id/privacy_notice_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+	<sg.bigo.ads.common.view.RoundedFrameLayout android:id="@id/submit_success_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-8.0dip" android:layout_below="@id/inter_image_layout" app:radius="8.0dip" />
+</RelativeLayout>

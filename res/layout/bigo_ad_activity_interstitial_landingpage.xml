@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sg.bigo.ads.common.view.RoundedFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:id="@id/webview_page" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<RelativeLayout android:id="@id/webview_top_bar" android:background="@drawable/bigo_ad_landing_top_bar_bg" android:layout_width="fill_parent" android:layout_height="54.0dip">
+			<ProgressBar android:id="@id/webview_progress_bar" android:tag="@string/bigo_ad_tag_progressbar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:progressDrawable="@drawable/bigo_ad_landing_progress_bar" style="?android:progressBarStyleHorizontal" />
+			<View android:id="@id/webview_top_indicator" android:background="@drawable/bigo_ad_landing_top_indicator" android:layout_width="36.0dip" android:layout_height="4.0dip" android:layout_marginTop="4.0dip" android:layout_centerHorizontal="true" />
+			<LinearLayout android:orientation="horizontal" android:id="@id/webview_top_action_bar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/webview_top_indicator">
+				<ImageView android:layout_gravity="center_vertical" android:id="@id/webview_close" android:tag="@string/bigo_ad_tag_close" android:visibility="invisible" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/bigo_ad_ic_close_gray" />
+				<LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/webview_top_middle" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+					<TextView android:textSize="14.0sp" android:textColor="#ff202124" android:ellipsize="end" android:gravity="center" android:id="@id/webview_title" android:tag="@string/bigo_ad_tag_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_centerHorizontal="true" android:fontFamily="sans-serif-medium" />
+					<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/webview_host_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+						<ImageView android:layout_gravity="center_vertical" android:id="@id/webview_safe" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginRight="2.0dip" android:src="@drawable/bigo_ad_ic_safe" />
+						<TextView android:textSize="12.0sp" android:textColor="#ff65696d" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@id/webview_host" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+					</LinearLayout>
+				</LinearLayout>
+				<ImageView android:layout_gravity="center_vertical" android:id="@id/webview_open" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:src="@drawable/bigo_ad_ic_web_open_browser" />
+			</LinearLayout>
+		</RelativeLayout>
+		<FrameLayout android:id="@id/webview_container" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+		<RelativeLayout android:id="@id/webview_bottom_bar" android:background="@drawable/bigo_ad_landing_bottom_bar_bg" android:layout_width="fill_parent" android:layout_height="48.0dip">
+			<ImageView android:enabled="false" android:id="@id/webview_back" android:tag="@string/bigo_ad_tag_back" android:background="@drawable/bigo_ad_ic_web_back" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerVertical="true" android:layout_marginStart="12.0dip" android:layout_alignParentStart="true" />
+			<ImageView android:id="@id/webview_forward" android:tag="@string/bigo_ad_tag_forward" android:background="@drawable/bigo_ad_ic_web_forward" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerVertical="true" android:layout_marginStart="12.0dip" android:layout_toEndOf="@id/webview_back" />
+			<ImageView android:id="@id/webview_copy" android:background="@drawable/bigo_ad_ic_web_copy" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerVertical="true" android:layout_marginEnd="12.0dip" android:layout_alignParentEnd="true" />
+			<ImageView android:id="@id/webview_refresh" android:background="@drawable/bigo_ad_ic_web_refresh" android:layout_width="24.0dip" android:layout_height="24.0dip" android:layout_centerVertical="true" android:layout_marginEnd="12.0dip" android:layout_toStartOf="@id/webview_copy" />
+		</RelativeLayout>
+	</LinearLayout>
+</sg.bigo.ads.common.view.RoundedFrameLayout>

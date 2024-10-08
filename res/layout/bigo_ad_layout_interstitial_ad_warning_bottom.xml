@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:id="@id/inter_warning_layout" android:paddingLeft="20.0dip" android:paddingTop="6.5dip" android:paddingRight="20.0dip" android:paddingBottom="4.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="16.0dip" android:layout_alignParentBottom="true">
+	<TextView android:textSize="10.0sp" android:gravity="center_horizontal" android:id="@id/inter_warning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:shadowColor="#33000000" android:shadowDx="0.0" android:shadowDy="1.0" android:shadowRadius="3.0" />
+</LinearLayout>

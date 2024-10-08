@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="8.0dip" android:paddingEnd="8.0dip">
+	<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bigo_ad_ic_title_layout" android:layout_width="wrap_content" android:layout_height="20.0dip">
+		<TextView android:textSize="14.0sp" android:textColor="#ff202124" android:ellipsize="end" android:id="@id/bigo_ad_ic_title_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4.7" android:maxLines="1" android:textAlignment="center" android:layout_marginEnd="4.0dip" />
+		<ImageView android:id="@id/bigo_ad_ic_title_iv" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/bigo_ad_ic_recommend" />
+	</LinearLayout>
+	<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/bigo_ad_ic_desc_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+		<TextView android:textSize="12.0sp" android:textColor="#ff65696d" android:ellipsize="end" android:id="@id/bigo_ad_ic_desc_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20M Reviews" android:maxLines="1" />
+		<ImageView android:id="@id/bigo_ad_ic_desc_iv" android:background="@drawable/bigo_ad_ic_info" android:layout_width="12.0dip" android:layout_height="12.0dip" android:layout_marginStart="2.0dip" />
+	</LinearLayout>
+</LinearLayout>

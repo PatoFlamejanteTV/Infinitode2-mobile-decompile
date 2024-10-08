@@ -1,0 +1,123 @@
+.class public final Lcom/google/common/util/concurrent/JdkFutureAdapters;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# annotations
+.annotation build Lcom/google/common/annotations/Beta;
+.end annotation
+
+.annotation build Lcom/google/common/annotations/GwtIncompatible;
+.end annotation
+
+.annotation runtime Lcom/google/common/util/concurrent/n;
+.end annotation
+
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Lcom/google/common/util/concurrent/JdkFutureAdapters$a;
+    }
+.end annotation
+
+
+# direct methods
+.method private constructor <init>()V
+    .registers 1
+
+    .line 1
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+    .line 5
+    .line 6
+    .line 7
+    .line 8
+    .line 9
+    .line 10
+    .line 11
+    .line 12
+    .line 13
+    .line 14
+    .line 15
+    .line 16
+    .line 17
+    .line 18
+    .line 19
+    .line 20
+    .line 21
+    .line 22
+.end method
+
+.method public static listenInPoolThread(Ljava/util/concurrent/Future;)Lcom/google/common/util/concurrent/ListenableFuture;
+    .registers 2
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<V:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/concurrent/Future<",
+            "TV;>;)",
+            "Lcom/google/common/util/concurrent/ListenableFuture<",
+            "TV;>;"
+        }
+    .end annotation
+
+    .line 1
+    instance-of v0, p0, Lcom/google/common/util/concurrent/ListenableFuture;
+
+    if-eqz v0, :cond_7
+
+    .line 2
+    check-cast p0, Lcom/google/common/util/concurrent/ListenableFuture;
+
+    return-object p0
+
+    .line 3
+    :cond_7
+    new-instance v0, Lcom/google/common/util/concurrent/JdkFutureAdapters$a;
+
+    invoke-direct {v0, p0}, Lcom/google/common/util/concurrent/JdkFutureAdapters$a;-><init>(Ljava/util/concurrent/Future;)V
+
+    return-object v0
+.end method
+
+.method public static listenInPoolThread(Ljava/util/concurrent/Future;Ljava/util/concurrent/Executor;)Lcom/google/common/util/concurrent/ListenableFuture;
+    .registers 3
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "<V:",
+            "Ljava/lang/Object;",
+            ">(",
+            "Ljava/util/concurrent/Future<",
+            "TV;>;",
+            "Ljava/util/concurrent/Executor;",
+            ")",
+            "Lcom/google/common/util/concurrent/ListenableFuture<",
+            "TV;>;"
+        }
+    .end annotation
+
+    .line 4
+    invoke-static {p1}, Lcom/google/common/base/Preconditions;->checkNotNull(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 5
+    instance-of v0, p0, Lcom/google/common/util/concurrent/ListenableFuture;
+
+    if-eqz v0, :cond_a
+
+    .line 6
+    check-cast p0, Lcom/google/common/util/concurrent/ListenableFuture;
+
+    return-object p0
+
+    .line 7
+    :cond_a
+    new-instance v0, Lcom/google/common/util/concurrent/JdkFutureAdapters$a;
+
+    invoke-direct {v0, p0, p1}, Lcom/google/common/util/concurrent/JdkFutureAdapters$a;-><init>(Ljava/util/concurrent/Future;Ljava/util/concurrent/Executor;)V
+
+    return-object v0
+.end method

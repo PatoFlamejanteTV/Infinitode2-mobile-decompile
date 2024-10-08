@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content">
+	<EditText android:textSize="13.0sp" android:gravity="left" android:id="@id/edit_content" android:paddingTop="16.5dip" android:paddingBottom="16.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="7.0dip" android:hint="@string/form_question_hint" android:inputType="text" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" />
+	<TextView android:textSize="13.0sp" android:textColor="#ff262e33" android:id="@id/edit_title" android:background="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-8.0dip" android:layout_alignTop="@id/edit_content" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" android:layout_marginStart="8.0dip" />
+	<TextView android:textSize="12.0sp" android:textColor="#ffff4d6a" android:id="@id/edit_warning" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_below="@id/edit_content" android:layout_marginStart="12.0dip" />
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:id="@id/layout_click_guide" android:background="#cc000000" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<RelativeLayout android:gravity="center_vertical" android:id="@id/click_guide_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+		<sg.bigo.ads.common.view.RoundedFrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@id/icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" android:layout_centerHorizontal="true" app:radius="22.0dip">
+			<ImageView android:id="@id/inter_icon" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+		</sg.bigo.ads.common.view.RoundedFrameLayout>
+		<sg.bigo.ads.common.view.RoundedFrameLayout xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@id/inter_btn_cta_layout" android:layout_width="160.0dip" android:layout_height="40.0dip" android:layout_below="@id/icon_layout" android:layout_centerHorizontal="true" app:radius="8.0dip">
+			<Button android:textSize="14.0sp" android:textColor="@android:color/white" android:ellipsize="end" android:id="@id/inter_btn_cta" android:background="@drawable/bigo_ad_button_bg_rectangle_blue" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/bigo_ad_cta_default" android:maxLines="1" android:textAllCaps="false" />
+		</sg.bigo.ads.common.view.RoundedFrameLayout>
+	</RelativeLayout>
+</RelativeLayout>

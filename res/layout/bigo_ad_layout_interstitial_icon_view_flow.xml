@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<sg.bigo.ads.common.view.RealtimeBlurLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/icon_ads_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<sg.bigo.ads.common.view.WrapContentViewFlow android:id="@id/icon_ads_view_flow" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="24.0dip" />
+</sg.bigo.ads.common.view.RealtimeBlurLinearLayout>

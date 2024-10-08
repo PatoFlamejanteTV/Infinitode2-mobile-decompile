@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<ImageView android:id="@id/click_guide" android:layout_width="120.0dip" android:layout_height="120.0dip" android:layout_marginBottom="-83.0dip" android:src="@drawable/bigo_ad_click_guide_shadow" android:scaleType="centerInside" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

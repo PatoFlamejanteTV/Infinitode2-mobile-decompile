@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false">
+	<ImageView android:id="@id/cas_native_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	<LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_weight="1.0" android:layout_marginHorizontal="2.0dip">
+		<TextView android:id="@id/cas_native_headline" style="@style/com.cleveradssolutions.nativeAds.AutoScrollingTextView.Title" />
+		<TextView android:id="@id/cas_native_body" style="@style/com.cleveradssolutions.nativeAds.AutoScrollingTextView" />
+		<include layout="@layout/cas_native_ad_info_line" />
+	</LinearLayout>
+	<com.cleveradssolutions.sdk.nativead.CASMediaView android:id="@id/cas_native_media_content" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_marginHorizontal="2.0dip" />
+	<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+		<LinearLayout android:gravity="center|right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<TextView android:gravity="end" android:id="@id/cas_native_price" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" style="@style/com.cleveradssolutions.nativeAds.AutoScrollingTextView" />
+			<com.cleveradssolutions.sdk.nativead.CASChoicesView android:id="@id/cas_native_ad_choices" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+		</LinearLayout>
+		<FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+			<Button android:textSize="10.0sp" android:textColor="@android:color/white" android:layout_gravity="center_vertical" android:id="@id/cas_native_cta" android:background="@drawable/cas_rounded_button" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:maxWidth="74.0dip" android:minWidth="48.0dip" android:minHeight="48.0dip" android:singleLine="true" android:textAllCaps="false" android:layout_marginVertical="2.0dip" />
+		</FrameLayout>
+	</LinearLayout>
+</LinearLayout>

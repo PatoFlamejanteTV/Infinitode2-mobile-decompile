@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="horizontal" android:background="@android:color/white" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingHorizontal="5.0dip">
+	<ImageView android:id="@id/cas_native_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+	<LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_weight="3.0" android:layout_marginHorizontal="4.0dip">
+		<TextView android:id="@id/cas_native_headline" style="@style/com.cleveradssolutions.nativeAds.AutoScrollingTextView.Title" />
+		<include layout="@layout/cas_native_ad_info_line" />
+	</LinearLayout>
+	<View android:id="@id/cas_native_body_divider" style="@style/CleverAdsSolutionsDivider" />
+	<TextView android:textSize="11.0sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/cas_native_body" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="2" android:layout_weight="2.0" />
+	<com.cleveradssolutions.sdk.nativead.CASMediaView android:id="@id/cas_native_media_content" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_marginHorizontal="2.0dip" />
+	<TextView android:textSize="10.0sp" android:textColor="#80000000" android:id="@id/cas_native_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:singleLine="true" android:layout_marginHorizontal="2.0dip" />
+	<Button android:textSize="10.0sp" android:textColor="@android:color/white" android:id="@id/cas_native_cta" android:background="@drawable/cas_rounded_button" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="140.0dip" android:minWidth="80.0dip" android:minHeight="32.0dip" android:singleLine="true" android:textAllCaps="false" />
+	<com.cleveradssolutions.sdk.nativead.CASChoicesView android:id="@id/cas_native_ad_choices" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

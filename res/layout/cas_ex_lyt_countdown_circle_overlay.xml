@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:gravity="start|bottom|center" android:orientation="vertical" android:id="@id/rl_count_down" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<RelativeLayout android:layout_width="36.0dip" android:layout_height="36.0dip" android:layout_marginLeft="25.0dip" android:layout_marginBottom="25.0dip">
+		<ProgressBar android:id="@id/Progress" android:layout_width="fill_parent" android:layout_height="fill_parent" android:indeterminate="false" android:progressDrawable="@drawable/cas_ex_timer_circle" android:layout_centerInParent="true" style="?android:progressBarStyleHorizontal" />
+		<TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/lblCountdown" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00" android:layout_centerInParent="true" />
+	</RelativeLayout>
+</RelativeLayout>

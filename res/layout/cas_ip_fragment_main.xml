@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:background="@android:color/transparent" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<LinearLayout android:orientation="vertical" android:background="@drawable/cas_ip_bg_card" android:padding="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+			<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip">
+				<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:padding="6.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.8">
+					<TextView android:textSize="22.0sp" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/cas_ip_nice_job" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nice job!" />
+					<TextView android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/cas_ip_displaying_test_ad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="You`re displaying test ad." />
+					<TextView android:textSize="11.0sp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@id/cas_ip_check_integrated" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Let`s check if everything is integrated correctly" />
+				</LinearLayout>
+				<ImageView android:id="@id/cas_ip_logo" android:layout_width="0.0dip" android:layout_height="wrap_content" android:src="@drawable/cas_ip_cat" android:adjustViewBounds="true" android:layout_weight="0.2" android:layout_marginStart="4.0dip" />
+			</LinearLayout>
+			<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/cas_ip_container_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+		</LinearLayout>
+		<LinearLayout android:orientation="vertical" android:id="@id/cas_ip_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+	</LinearLayout>
+</ScrollView>

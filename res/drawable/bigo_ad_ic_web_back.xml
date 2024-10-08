@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+	<item android:state_enabled="true">
+		<rotate android:fromDegrees="180.0" android:toDegrees="180.0" android:pivotX="50.0%" android:pivotY="50.0%">
+			<bitmap android:src="@drawable/bigo_ad_ic_web_forward_enable" />
+		</rotate>
+	</item>
+	<item android:state_enabled="false" android:drawable="@drawable/bigo_ad_ic_web_back_disable" />
+</selector>
